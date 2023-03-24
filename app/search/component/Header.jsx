@@ -1,4 +1,4 @@
-import SearchBar from "@/app/component/SearchBar";
+import SearchBar from "../../component/SearchBar";
 import React from "react";
 
 const Header = () => {

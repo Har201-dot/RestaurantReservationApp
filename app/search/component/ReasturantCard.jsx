@@ -1,6 +1,6 @@
-import Price from "@/app/component/price";
-import Stars from "@/app/component/Stars";
-import { calculateReiviewRatingAverage } from "@/utils/calculateReiviewRatingAverage";
+import Price from "../../component/Price";
+import Stars from "../../component/Stars";
+import { calculateReiviewRatingAverage } from "../../../utils/calculateReiviewRatingAverage";
 import Link from "next/link";
 import React from "react";
 

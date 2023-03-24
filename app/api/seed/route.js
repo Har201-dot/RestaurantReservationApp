@@ -3,7 +3,7 @@ import { PRICE, PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export async function GET(request) {
-	await prisma.table.deleteMany();
+	await prisma.table.deleteMany({});
 	await prisma.review.deleteMany({});
 	await prisma.item.deleteMany({});
 	await prisma.restaurant.deleteMany({});

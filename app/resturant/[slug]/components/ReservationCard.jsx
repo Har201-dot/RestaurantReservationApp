@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { partySize as partySizes } from "@/data";
-import { times } from "@/data/times";
+import { partySize as partySizes } from "../../../../data/partySize";
+import { times } from "../../../../data/times";
 import ReactDatePicker from "react-datepicker";
-import useAvailabilities from "@/hooks/useAvailabilties";
+import useAvailabilities from "../../../../hooks/useAvailabilties";
 import { CircularProgress } from "@mui/material";
 import Link from "next/link";
-import { convertToDisplayTime } from "@/utils/convertToDisplayTime";
+import { convertToDisplayTime } from "../../../../utils/convertToDisplayTime";
 
 const ReservationCard = ({ openTime, closeTime, slug }) => {
 	const { data, loading, error, fetchAvailabilities } = useAvailabilities();

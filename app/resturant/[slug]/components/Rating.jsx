@@ -1,5 +1,5 @@
-import Stars from "@/app/component/Stars";
-import { calculateReiviewRatingAverage } from "@/utils/calculateReiviewRatingAverage";
+import Stars from "../../../component/Stars";
+import { calculateReiviewRatingAverage } from "../../../../utils/calculateReiviewRatingAverage";
 import React from "react";
 
 const Rating = ({ reviews }) => {

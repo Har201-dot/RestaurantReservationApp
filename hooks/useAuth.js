@@ -1,4 +1,4 @@
-import { AuthenticationContext } from "@/app/context/AuthContext";
+import { AuthenticationContext } from "../app/context/AuthContext";
 import axios from "axios";
 import { useContext } from "react";
 import { deleteCookie, getCookie, removeCookies } from "cookies-next";

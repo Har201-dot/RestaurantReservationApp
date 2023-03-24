@@ -1,6 +1,6 @@
 "use client";
 
-import useAuth from "@/hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 import React, { createContext, useEffect, useState } from "react";
 import jwt from "jsonwebtoken";

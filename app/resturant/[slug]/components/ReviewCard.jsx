@@ -1,4 +1,4 @@
-import Stars from "@/app/component/Stars";
+import Stars from "../../../component/Stars";
 import React from "react";
 
 const ReviewCard = ({ review }) => {

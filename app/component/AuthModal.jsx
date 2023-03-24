@@ -3,7 +3,7 @@
 import { useEffect, useState, useContext } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import useAuth from "@/hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 import { AuthenticationContext } from "../context/AuthContext";
 import AuthModalInputs from "./AuthModelInputs";
 import { Alert, CircularProgress } from "@mui/material";

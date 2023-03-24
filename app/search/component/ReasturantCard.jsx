@@ -8,7 +8,7 @@ const ReasturantCard = (props) => {
 	const rest = props.rest;
 	const renderRatingText = () => {
 		const rating = calculateReiviewRatingAverage(rest.reviews);
-		console.log(rating);
+		// console.log(rating);
 		if (rating > 4) return "Awesome";
 		else if (rating <= 4 && rating > 3) {
 			return "Good";

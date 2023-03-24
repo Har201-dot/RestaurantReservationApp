@@ -17,7 +17,7 @@ const useAuth = () => {
 				email: email,
 				password: password,
 			});
-			console.log(resp);
+			// console.log(resp);
 			setAuthState({
 				data: resp.data,
 				loading: false,

@@ -2,7 +2,7 @@ import React from "react";
 
 const Images = (props) => {
 	const images = props.img;
-	console.log(images.length);
+	// console.log(images.length);
 	return (
 		<div>
 			<h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">

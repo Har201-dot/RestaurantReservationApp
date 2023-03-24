@@ -11,8 +11,9 @@ export const metadata = {
 };
 
 const fetchRestByCity = async (searchParams) => {
+	// console.log(searchParams);
 	const where = {};
-
+	// console.log();
 	if (searchParams.city) {
 		const location = {
 			name: {

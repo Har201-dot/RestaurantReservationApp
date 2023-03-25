@@ -7,10 +7,6 @@ export async function generateMetadata({ params }) {
 	return { title: title };
 }
 
-export const metadata = {
-	title: "Milestones Grill (Toronto) | OpenTable",
-};
-
 const ResturantLayout = ({ params, children }) => {
 	return (
 		<main>

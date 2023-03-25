@@ -2,7 +2,7 @@ import { PRICE, PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export async function GET(request) {
+export default async function handler(req, res) {
 	await prisma.table.deleteMany({});
 	await prisma.review.deleteMany({});
 	await prisma.item.deleteMany({});
@@ -1314,5 +1314,7 @@ export async function GET(request) {
 		],
 	});
 
-	return new Response("Hello, Next.js!");
+	return res.status(200).json({
+		test: "okay !!!",
+	});
 }

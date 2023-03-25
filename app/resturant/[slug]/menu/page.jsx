@@ -12,10 +12,6 @@ export async function generateMetadata({ params }) {
 	return { title: title };
 }
 
-export const metadata = {
-	title: "Menu of Milestones Grill (Toronto)",
-};
-
 const fetchItemsMenu = async (slug) => {
 	const rest = await prisma.restaurant.findUnique({
 		where: {

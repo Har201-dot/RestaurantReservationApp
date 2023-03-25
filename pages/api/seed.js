@@ -19,8 +19,8 @@ export default async function handler(req, res) {
 		data: [{ name: "indian" }, { name: "italian" }, { name: "mexican" }],
 	});
 
-	const locations = await prisma.location.findMany();
-	const cuisines = await prisma.cuisine.findMany();
+	const locations = await prisma.location.findMany({});
+	const cuisines = await prisma.cuisine.findMany({});
 
 	const indianCuisineId =
 		cuisines.find((cuisine) => cuisine.name === "indian")?.id || 1;
@@ -509,7 +509,7 @@ export default async function handler(req, res) {
 		],
 	});
 
-	const restaurants = await prisma.restaurant.findMany();
+	const restaurants = await prisma.restaurant.findMany({});
 
 	const vivaanId =
 		restaurants.find((restaurant) => restaurant.name === "Vivaan - fine Indian")
